@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Desde 2011, somos o primeiro estúdio de criação e desenvolvimento de games em Ribeirão Preto SP, Brasil. Focado e especializado em jogos digitais">
+	<meta name="author" content="Luis Eduardo Nery Santos">
+	<meta name="keywords" content="criação de games, empresa de jogos, games educativos, desenvolvimento de jogos, jogos digitais, realidade virtual, realidade aumentada, ar, vr, entretenimento"/>
+	<link rel="preload" as="font">
+	<link rel="stylesheet" id="first_style" type="text/css" href="css/style.min.css" async>
+	<title>Pixside Games - Estúdio de desenvolvimento de jogos digitais</title>
+</head>
+<body>
+	<header>
+		<nav class="nav-bar">
+			<div class="logo">
+				<a href="index.html">
+					<img src="images/logo-pixside.svg" alt="Logotipo Pixside Games" title="Pixside Games" width="50" height="47">
+				</a>
+			</div>		
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+					<li class="nav-item"><a href="#quem-somos" class="nav-link">PIXSIDE GAMES</a></li>
+					<li class="nav-item"><a href="#servicos" class="nav-link">SERVIÇOS</a></li>
+					<li class="nav-item"><a href="#games" class="nav-link">PORTFÓLIO</a></li>					
+					<li class="nav-item"><a href="#contato" class="nav-link">FALE CONOSCO</a></li>
+				</ul>
+			</div>	
+			<div class="nav-social">				
+				<a href="https://facebook.com/pixside" target="_blank">					
+					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" role="img" aria-describedby="facebook">
+						<title id="facebook">Nosso Facebook</title>
+						<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+					</svg>
+				</a>
+				<a href="mailto:contato@pixside.com.br">
+					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" role="img" aria-describedby="email">
+						<title id="email">Nosso E-mail</title>
+						<path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+					</svg>
+				</a>		
+			</div>
+
+			<div class="mobile-menu-icon">
+				<button onclick="showMenu()">
+					<img class="icon" src="images/menu_white.svg" alt="botão de menu" width="36" height="36">
+				</button>
+			</div>
+		</nav>
+
+		<nav class="mobile-menu">
+			<ul>
+				<li class="nav-item"><a href="#home" class="nav-link" onclick="showMenu()">HOME</a></li>
+				<li class="nav-item"><a href="#quem-somos" class="nav-link" onclick="showMenu()">PIXSIDE GAMES</a></li>
+				<li class="nav-item"><a href="#servicos" class="nav-link" onclick="showMenu()">SERVIÇOS</a></li>
+				<li class="nav-item"><a href="#games" class="nav-link" onclick="showMenu()">GAMES</a></li>					
+				<li class="nav-item"><a href="#contato" class="nav-link" onclick="showMenu()">FALE CONOSCO</a></li>
+			</ul>
+			<div class="nav-social">
+				<a href="https://facebook.com/pixside" target="_blank" onclick="showMenu()">					
+					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" role="img" aria-describedby="mobile-facebook">
+						<title id="mobile-facebook">Nosso Facebook</title>
+						<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+					</svg>
+				</a>
+				<a href="mailto:contato@pixside.com.br" onclick="showMenu()">
+					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" role="img" aria-describedby="mobile-email">
+						<title id="mobile-email">Nosso E-mail</title>
+						<path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+					</svg>
+				</a>		
+			</div>
+		</nav>
+	</header>
+
+	<section id="home">
+		<div class="banner">
+			<div class="banner-bg"></div>
+			<div class="banner-content">
+				<p>Bem-vindo à</p>
+				<img src="images/logotipo-pixside.svg" alt="Pixside Games" title="Pixside Games" width="320" height="87">
+				<p>Tecnologia em Jogos Digitais</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="quem-somos">
+		<div id="about-us">
+			<h1>Pixside Games</h1>
+			<p>
+				A <strong>Pixside Games</strong> é uma empresa de <strong>desenvolvimento de games</strong> localizada na cidade de Ribeirão Preto - SP. 
+				<br /><br />
+				Sendo o primeiro estúdio, desde 2011, totalmente focado e especializado em <strong>jogos para entretenimento</strong>, <strong>educação</strong> e <strong>publicidade</strong> multiplataforma. 
+				<br /><br />
+				Trabalhamos com o desenvolvimento de games utilizando as <strong>tecnologias mais recentes</strong> do mercado, como <strong>Realidade Aumentada</strong>, <strong>Realidade Virtual</strong>, <strong>Realidade Mista</strong> (Meta Quest, Apple Vision Pro), integrações com <strong>IA Generativa</strong>, dentre outras.
+			</p>
+		</div>		
+	</section>
+
+	<section id="servicos">
+		<div id="services">
+			<h2>Serviços</h2>
+			<div class="container">
+				<div class="card c1">
+					<div class="box">
+						<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 -960 960 960" width="64"><path d="m272-440 208 120 208-120-168-97v137h-80v-137l-168 97Zm168-189v-17q-44-13-72-49.5T340-780q0-58 41-99t99-41q58 0 99 41t41 99q0 48-28 84.5T520-646v17l280 161q19 11 29.5 29.5T840-398v76q0 22-10.5 40.5T800-252L520-91q-19 11-40 11t-40-11L160-252q-19-11-29.5-29.5T120-322v-76q0-22 10.5-40.5T160-468l280-161Zm0 378L200-389v67l280 162 280-162v-67L520-251q-19 11-40 11t-40-11Zm40-469q25 0 42.5-17.5T540-780q0-25-17.5-42.5T480-840q-25 0-42.5 17.5T420-780q0 25 17.5 42.5T480-720Zm0 560Z"/></svg>
+						<h3>Entretenimento</h3>
+						<p>Criamos modernos e divertidos <strong>jogos digitais</strong>, para computadores, navegadores web, smartphones, tablets e dispositivos de realidade virtual, realidade aumentada e realidade mista</p>
+					</div>
+				</div>
+				<div class="card c2">
+					<div class="box">
+						<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 -960 960 960" width="64"><path d="M720-440v-80h160v80H720Zm48 280-128-96 48-64 128 96-48 64Zm-80-480-48-64 128-96 48 64-128 96ZM200-200v-160h-40q-33 0-56.5-23.5T80-440v-80q0-33 23.5-56.5T160-600h160l200-120v480L320-360h-40v160h-80Zm240-182v-196l-98 58H160v80h182l98 58Zm120 36v-268q27 24 43.5 58.5T620-480q0 41-16.5 75.5T560-346ZM300-480Z"/></svg>
+						<h3>Publicidade</h3>
+						<p>Um dos ramos da comunicação que tem feito mais uso dos <strong>jogos</strong> para transmitir suas mensagens é a publicidade. A apropriação da linguagem dos <strong>games</strong> pela propaganda deu origem aos advergames: jogos eletrônicos vinculados a marcas capazes de vender produtos e serviços ou mesmo agregar valores simbólicos ao nome das empresas.</p>
+					</div>
+				</div>
+				<div class="card c3">
+					<div class="box">
+						<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 -960 960 960" width="64"><path d="M560-564v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-494Z"/></svg>
+						<h3>Educação</h3>
+						<p>Os <strong>jogos educativos</strong> beneficiam o aluno durante toda a vida, seus benefícios podem ser inúmeros e dentre eles, podemos ressaltar: o aumento da percepção, estímulo à criatividade e melhora no processo de tomada de decisões, além disso um bom game educativo contribui para que a inteligência do aluno seja expandida.</p>
+					</div>
+				</div>
+				<div class="card c4">
+					<div class="box">
+						<svg xmlns="http://www.w3.org/2000/svg" height="64" viewBox="0 -960 960 960" width="64"><path d="M120-160q-33 0-56.5-23.5T40-240v-480q0-33 23.5-56.5T120-800h720q33 0 56.5 23.5T920-720v480q0 33-23.5 56.5T840-160H120Zm40-560h-40v480h40v-480Zm80 480h480v-480H240v480Zm560-480v480h40v-480h-40Zm0 0h40-40Zm-640 0h-40 40Z"/></svg>
+						<h3>Mídias Digitais</h3>
+						<p>Diagramamos e programamos jornais, revistas e livros digitais para tablets, utilizando diversos recursos <strong>multimídia</strong> e interativos (Efeitos sonoros, Música, Animações, <strong>Mini jogos</strong>, Galeria de imagens, <strong>Objetos 3D</strong>, Realidade Aumentada, Realidade virtual, Vídeos em 360°, Paleta de cores para desenhar e pintar, botões, Objetos e imagens arrastáveis e muito mais).</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="games">
+			<h2>Portfólio</h2>
+			<p>
+				Conheça alguns dos nossos games e experiências interativas.
+			</p>
+
+			<div class="card-games-container">
+
+				<div class="card-games gc1" data-video="https://www.youtube.com/embed/o4whBt7MG90?si=TE-NEqG99sFTIY8I">
+			      <img src="images/foursys-apple-vision-pro.webp" alt="Foursys - Apple Vision Pro" class="card-image">
+			      <h3 class="card-title gc1">FOURSYS - VISION PRO</h3>
+			      <p class="card-description">
+			        Projeto em realidade aumentada e realidade virtual (Apple Vision Pro) apresentando o portfólio da Foursys e Inteligência Artificial Generativa para interação com o personagem.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/o4whBt7MG90?si=TE-NEqG99sFTIY8I">Ver Vídeo</button>
+			    </div>	
+
+			    <div class="card-games gc4" data-video="https://www.youtube.com/embed/a5sGPfuEE9s?si=3fIsiai6FFCJ0u1T">
+			      <img src="images/sala-vacinacao-vr-meta-quest.webp" alt="Sala de Vacinação VR" class="card-image">
+			      <h3 class="card-title gc4">SALA DE VACINAÇÃO</h3>
+			      <p class="card-description">
+			        Game em realidade virtual (Meta Quest 3), simulando uma sala de vacinação, encomendado por pesquisadores da USP e EERP (Escola de Enfermagem de Ribeirão Preto).
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/a5sGPfuEE9s?si=3fIsiai6FFCJ0u1T">Ver Vídeo</button>
+			    </div>		    
+
+			    <div class="card-games gc2" data-video="https://www.youtube.com/embed/trp_u8qouMA?si=SEzPcx99zVpeWxB-">
+			      <img src="images/game-turma-do-esperto.webp" alt="A Turma do Esperto" class="card-image">
+			      <h3 class="card-title gc2">A TURMA DO ESPERTO</h3>
+			      <p class="card-description">
+			        Uma série de 10 jogos para aprender brincando com Esperto e sua turma neste divertidíssimo jogo educativo. Crianças de até 5 anos aprenderão brincando.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/trp_u8qouMA?si=SEzPcx99zVpeWxB-">Ver Vídeo</button>
+			    </div>	
+
+			    <div class="card-games gc3" data-video="https://www.youtube.com/embed/MDTX9gm1hkY?si=ewjXawLh5RQ4tI9S">
+			      <img src="images/game-herois-do-diabetes.webp" alt="Os heróis do diabetes" class="card-image">
+			      <h3 class="card-title gc3">OS HERÓIS DO DIABETES</h3>
+			      <p class="card-description">
+			        Uma série de 4 jogos educativos para crianças, sobre diabetes e autocuidado, encomendado por pesquisadores da Escola de Enfermagem da USP.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/MDTX9gm1hkY?si=ewjXawLh5RQ4tI9S">Ver Vídeo</button>
+			    </div>
+
+			    <div class="card-games gc4" data-video="https://www.youtube.com/embed/wtpfKHqscCs?si=ieAyMxoB_xnJ2TAr">
+			      <img src="images/fangame-exterminadores-do-alem.webp" alt="Exterminadores do Além (Danilo Gentili)" class="card-image">
+			      <h3 class="card-title gc4">EXTERMINADORES DO ALÉM</h3>
+			      <p class="card-description">
+			        Fã game não oficial, criado com inspiração na obra do escritor e comediante Danilo Gentili. Survival Horror desenvolvido para aprimorar habilidades na Unreal Engine 5.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/wtpfKHqscCs?si=ieAyMxoB_xnJ2TAr">Ver Vídeo</button>
+			    </div>	
+
+			    <div class="card-games gc1" data-video="https://www.youtube.com/embed/EBSwvKW2qy4?si=kVP-j2MnhTotCnIi">
+			      <img src="images/game-escola-da-inteligencia.webp" alt="Escola da Inteligência" class="card-image">
+			      <h3 class="card-title gc1">ESCOLA DA INTELIGÊNCIA</h3>
+			      <p class="card-description">
+			        Mais de 40 jogos de português e matemática desenvolvidos para a Escola da Inteligência, utilizando o método socioemocional desenvolvido pelo escritor e psiquiatra, Augusto Cury.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/EBSwvKW2qy4?si=kVP-j2MnhTotCnIi">Ver Vídeo</button>
+			    </div>
+
+			    <div class="card-games gc2" data-video="https://www.youtube.com/embed/2OumyZNpZRM?si=CEEhExP2etJmabOx">
+			      <img src="images/game-aladdin-clash-of-dragon.webp" alt="Aladdin - Clash of Dragon" class="card-image">
+			      <h3 class="card-title gc2">ALADDIN - CLASH OF DRAGON</h3>
+			      <p class="card-description">
+			        Aladdin deve escapar da caverna do dragão, sem tocar nas paredes amaldiçoadas, ele busca pela lâmpada maravilhosa, com apenas um anel mágico que o suposto tio lhe deu.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/2OumyZNpZRM?si=CEEhExP2etJmabOx">Ver Vídeo</button>
+			    </div>	    
+
+			    <div class="card-games gc3" data-video="https://www.youtube.com/embed/geuHKMjwKY4?si=6nNj64A4CTlxyPeK">
+			      <img src="images/game-pigeon-birds-avengers.webp" alt="Pigeon Birds Avengers" class="card-image">
+			      <h3 class="card-title gc3">PIGEON - BIRDS AVENGERS</h3>
+			      <p class="card-description">
+			        Ajude o pombinho Pigeon à vingar-se dos seres humanos que destruíram sua floresta, fazendo cocô em suas cabeças antes que o ônibus chegue, evitando que vão a seus trabalhos e façam a cidade crescer.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/geuHKMjwKY4?si=6nNj64A4CTlxyPeK">Ver Vídeo</button>
+			    </div>	
+
+			    <div class="card-games gc4" data-video="https://www.youtube.com/embed/GOZC2vzaA-Q?si=EX6oEHqx_Tud-h7u">
+			      <img src="images/game-employee-experience.webp" alt="Pulses - Employee Experience" class="card-image">
+			      <h3 class="card-title gc4">PULSES - EMPLOYEE EXPERIENCE</h3>
+			      <p class="card-description">
+			        Jogo de tabuleiro onde lideranças e profissionais de RH experimentem a experiência do colaborador dentro de um  ciclo, que vai de antes mesmo dele entrar na empresa até o momento em que se torna um ex-colaborador.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/GOZC2vzaA-Q?si=EX6oEHqx_Tud-h7u">Ver Vídeo</button>
+			    </div>  		    	
+
+			    <div class="card-games gc1" data-video="https://www.youtube.com/embed/tpqSbCTbAKI?si=-K332UCeRsRMhf1-">
+			      <img src="images/game-adivinhe-com-o-nico.webp" alt="Adivinhe com o Nico" class="card-image">
+			      <h3 class="card-title gc1">ADIVINHE COM O NICO</h3>
+			      <p class="card-description">
+			        Jogo educativo desenvolvido para a Fundação PANDA para ajudar crianças com altismo, treinando a percepção visual e olhar direcionado.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/tpqSbCTbAKI?si=-K332UCeRsRMhf1-">Ver Vídeo</button>
+			    </div>
+
+			    <div class="card-games gc2" data-video="https://www.youtube.com/embed/RiZ0OQHKnck?si=dGjuEfNasncZQdvn">
+			      <img src="images/game-a-hora-do-nico.webp" alt="A hora do Nico" class="card-image">
+			      <h3 class="card-title gc2">A HORA DO NICO</h3>
+			      <p class="card-description">
+			        Jogo desenvolvido para a Fundação PANDA com o propósito de facilitar o aprendizado das crianças com altismo as atividades rotineiras como lavar as mãos, comer, ir ao banheiro e dormir.
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/RiZ0OQHKnck?si=dGjuEfNasncZQdvn">Ver Vídeo</button>
+			    </div>
+
+			    <div class="card-games gc3" data-video="https://www.youtube.com/embed/iQg7NbJU1WM?si=Tkqj98QrR5u5lmJH">
+			      <img src="images/game-vestindo-com-o-nico.webp" alt="Vestindo com o Nico" class="card-image">
+			      <h3 class="card-title gc3">VESTINDO COM O NICO</h3>
+			      <p class="card-description">
+			        Jogo desenvolvido para a Fundação PANDA para ensinar crianças com altismo as atividades diárias e autocuidado como escolher a roupa certa e vestir-se conforme o tempo (ensolarado, chuvoso ou frio).
+			      </p>
+			      <button class="card-button" data-video="https://www.youtube.com/embed/iQg7NbJU1WM?si=Tkqj98QrR5u5lmJH">Ver Vídeo</button>
+			    </div>			     
+
+		  	</div>
+	</section>
+
+	<section id="contato">
+		<div id="contact">
+			<h2>Fale Conosco</h2>
+			<p>Faça um orçamento e cronograma para o seu projeto.</p>
+			<br /><br />
+			<p>E-mail: <strong><a href="mailto:contato@pixside.com.br">contato@pixside.com.br</a></strong></p><br />
+		
+			<a href="#whatsapp" onclick="openWhatsapp()" class="whatsapp-link">
+				<img src="images/whatsapp_icon.svg" title="Orçamento via Whatsapp" alt="Orçamento via Whatsapp"> 
+				<strong style="text-align: justify;">+55 (16) 99975-1603.</strong>
+			</a>
+			
+		</div>		
+	</section>
+	
+
+	<footer>
+		<div class="content">
+			<div class="social-medias">
+				<a href="https://facebook.com/pixside" target="_blank">					
+					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" role="img" aria-describedby="footer-facebook">
+						<title id="footer-facebook">Nosso Facebook</title>
+						<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+					</svg>
+				</a>
+				<a href="mailto:contato@pixside.com.br">
+					<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" role="img" aria-describedby="footer-email">
+						<title id="footer-email">Nosso E-mail</title>
+						<path d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z"/>
+					</svg>
+				</a>
+			</div>			
+			<p>© 2011-2025 <span>Pixside Games</span> - Todos os direitos reservados</p>
+			<a href="/politica-privacidade.html" target="_blank">Política de privacidade e Termos de uso</a>
+		</div>		
+	</footer>
+
+	<div class="modal" id="videoModal">
+	    <div class="modal-content">
+	      <span class="close-button">&times;</span>
+	      <div class="iframe-container">
+	        <iframe id="youtubePlayer" src="" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; modestbranding=1; showinfo=0;"></iframe>
+	      </div>
+	    </div>
+	  </div>
+
+	<div onclick="openWhatsapp()" class="whatsapp-button">
+    	<img src="images/whatsapp_icon.svg" title="Solicitar orçamento pelo Whatsapp agora!" alt="Solicitar orçamento pelo Whatsapp.">
+    </div>
+
+	<script type="text/javascript">
+		// Seleciona elementos
+		const modal = document.getElementById("videoModal");
+		const iframe = document.getElementById("youtubePlayer");
+		const closeButton = document.querySelector(".close-button");
+		const buttons = document.querySelectorAll(".card-button");
+		const cardGamesButtons = document.querySelectorAll(".card-games");
+
+		// Abre a modal e carrega o vídeo
+		buttons.forEach(button => {
+		  button.addEventListener("click", function () {
+		    const videoUrl = button.getAttribute("data-video");
+		    iframe.src = `${videoUrl}?autoplay=1`; // Adiciona autoplay ao vídeo
+		    modal.style.display = "flex";
+		  });
+		});
+
+		// Abre a modal e carrega o vídeo quando clica em qualquer parte do card
+		cardGamesButtons.forEach(card => {
+		  card.addEventListener("click", function () {
+		    const videoUrl = card.getAttribute("data-video");
+		    iframe.src = `${videoUrl}?autoplay=1`; // Adiciona autoplay ao vídeo
+		    modal.style.display = "flex";
+		  });
+		});
+
+		// Fecha a modal e limpa o vídeo
+		closeButton.addEventListener("click", function () {
+		  modal.style.display = "none";
+		  iframe.src = ""; // Remove a URL para parar o vídeo
+		});
+
+		// Fecha a modal ao clicar fora dela
+		window.addEventListener("click", function (event) {
+		  if (event.target === modal) {
+		    modal.style.display = "none";
+		    iframe.src = "";
+		  }
+		});
+
+		function showMenu()
+		{
+			let menuMobile = document.querySelector(".mobile-menu");
+			let menuIcon = document.querySelector(".icon");
+
+			if(menuMobile.classList.contains("open"))
+			{
+				menuMobile.classList.remove("open");
+				menuIcon.src = "images/menu_white.svg";		
+			}
+			else
+			{
+				menuMobile.classList.add("open");
+				menuIcon.src = "images/close_white.svg";
+			}
+		}
+
+	    function isMobile() 
+	    {
+	      return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+	    }
+	    
+	    function openWhatsapp() 
+	    {
+	      const message = encodeURIComponent("Olá, gostaria de solicitar um orçamento para o meu projeto.");
+	      const phone = "5516999751603";
+	      let url;
+	      if (isMobile()) 
+	      {
+	        url = `https://api.whatsapp.com/send?phone=${phone}&text=${message}`;
+	      } else 
+	      {
+	        url = `https://web.whatsapp.com/send/?phone=${phone}&text=${message}`;
+	      }
+	      window.open(url, "_blank");
+	    }
+	</script>
+</body>
+</html>
